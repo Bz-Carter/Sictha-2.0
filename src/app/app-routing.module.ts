@@ -1,6 +1,68 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { Homepage2Component } from "./components/pages/homepage2/homepage2.component";
+import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
+
+
+const routes: Routes = [
+  { path: '', component: Homepage2Component, },
+  
+  {
+    path: 'about/crapme',
+    loadChildren: () => import('./components/pages/aboutus/aboutus.module')
+      .then(mod => mod.AboutusModule)
+  },
+  {
+    path: 'about/presentation',
+    loadChildren: () => import('./components/pages/service1/service1.module')
+      .then(mod => mod.Service1Module)
+  },
+  {
+    path: 'actvities/news',
+    loadChildren: () => import('./components/pages/blog-grid/blog-grid.module')
+      .then(mod => mod.BlogGridModule)
+  },
+  {
+    path: 'actvities/galleries',
+    loadChildren: () => import('./components/pages/portfolio1/portfolio1.module')
+      .then(mod => mod.Portfolio1Module)
+  },
+  {
+    path: 'internal-regulations',
+    loadChildren: () => import('./components/pages/faq/faq.module')
+      .then(mod => mod.FaqModule)
+  },
+  {
+    path: 'registration',
+    loadChildren: () => import('./components/pages/career/career.module')
+      .then(mod => mod.CareerModule)
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./components/pages/contactus/contactus.module')
+      .then(mod => mod.ContactusModule)
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+  declarations: []
+})
+export class AppRoutingModule { }
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
+
+/*import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
 import { Homepage2Component } from './components/pages/homepage2/homepage2.component';
 import { AboutusComponent } from './components/pages/aboutus/aboutus.component';
 import { TeamComponent } from './components/pages/team/team.component';
@@ -51,3 +113,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+*/
