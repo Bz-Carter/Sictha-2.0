@@ -23,23 +23,26 @@ import { ContactusComponent } from './components/pages/contactus/contactus.compo
 const routes: Routes = [
 
 {path: '', component: Homepage2Component},
-{path: 'about-us', component: AboutusComponent},
+{path: 'about/presentation', component: Service1Component},
+{path: 'about/crapme', component: AboutusComponent},
+{path: 'actvities/news', component: BlogGridComponent},
+{path: 'actvities/galleries', component: Portfolio1Component},
+{path: 'internal-regulations', component: FaqComponent},
+{path: 'registration', component: CareerComponent},
+{path: 'contact-us', component: ContactusComponent},
+
+
 {path: 'team', component: TeamComponent},
 {path: 'team-detail', component: TeamDetailsComponent},
-{path: 'career', component: CareerComponent},
-{path: 'FAQ', component: FaqComponent},
 {path: 'service-one', component: Service1Component},
 {path: 'service-two', component: Service2Component},
 {path: 'service-detail', component: ServiceDetailComponent},
 {path: 'blog-standard', component: BlogStandardComponent},
-{path: 'blog-grid', component: BlogGridComponent},
 {path: 'blog-detail', component: BlogDetailComponent},
-{path: 'portfolio-one', component: Portfolio1Component},
 {path: 'portfolio-two', component: Portfolio2Component},
 {path: 'portfolio-detail', component: PortfolioDetailComponent},
 {path: 'shop', component: ShopComponent},
 {path: 'shop-detail', component: ShopDetailComponent},
-{path: 'contact-us', component: ContactusComponent},
 
 ];
 

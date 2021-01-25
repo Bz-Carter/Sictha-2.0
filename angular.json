@@ -35,7 +35,6 @@
               "src/styles.css"
             ],
             "scripts": [
-
               "src/assets/js/vendor/modernizr-3.6.0.min.js",
               "src/assets/js/vendor/jquery-1.12.4.min.js",
               "src/assets/js/bootstrap.min.js",
@@ -48,8 +47,7 @@
               "src/assets/js/jquery.easypiechart.min.js",
               "src/assets/js/jquery-ui.min.js",
               "src/assets/js/wow.min.js",
-              "src/assets/js/main.js",
-
+              "src/assets/js/main.js"
             ]
           },
           "configurations": {
@@ -143,6 +141,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "finsa"
+    }
+  },
+  "defaultProject": "finsa",
+  "cli": {
+    "analytics": false
+  }
 }
