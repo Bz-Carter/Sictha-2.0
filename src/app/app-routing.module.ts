@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Homepage1Component } from './components/pages/homepage1/homepage1.component';
 import { Homepage2Component } from './components/pages/homepage2/homepage2.component';
-import { Homepage3Component } from './components/pages/homepage3/homepage3.component';
 import { AboutusComponent } from './components/pages/aboutus/aboutus.component';
 import { TeamComponent } from './components/pages/team/team.component';
 import { TeamDetailsComponent } from './components/pages/team-details/team-details.component';
@@ -24,9 +22,7 @@ import { ContactusComponent } from './components/pages/contactus/contactus.compo
 
 const routes: Routes = [
 
-{path: '', component: Homepage1Component},
-{path: 'homepage2', component: Homepage2Component},
-{path: 'homepage3', component: Homepage3Component},
+{path: '', component: Homepage2Component},
 {path: 'about-us', component: AboutusComponent},
 {path: 'team', component: TeamComponent},
 {path: 'team-detail', component: TeamDetailsComponent},
