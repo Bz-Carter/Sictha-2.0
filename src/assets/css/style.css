@@ -295,7 +295,7 @@ a, a:hover {
   right: 15px;
   top: 4px;
   bottom: 4px;
-  background-color: #14212b;
+  background-color:  rgb(68, 50, 19);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   content: '';
@@ -1234,7 +1234,7 @@ header.sticky-header.sticky-on .header-nav .nav-container .menu-items ul li a {
 }
 
 header.sticky-header.header-two.sticky-on .header-nav {
-  background-color: #14212b;
+  background-color: #206926;
 }
 
 @media (max-width: 767px) {
@@ -8207,7 +8207,7 @@ header.header-three .header-nav::before {
 
 /*=======  Footer  =======*/
 footer {
-  background-color: #14212b;
+  background-color: rgb(68, 50, 19);
   position: relative;
   padding-top: 80px;
   z-index: 1;
@@ -8452,13 +8452,13 @@ footer .widget.insta-feed-widget .insta-images .insta-img:hover::before {
 }
 
 footer .footer-copyright {
-  border-top: 2px solid #1d2d3a;
+  border-top: 2px solid #206926;
   padding: 30px 0;
   position: relative;
 }
 
 footer .footer-copyright .copyright-text {
-  color: #7d91a0;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8492,13 +8492,13 @@ footer .footer-copyright .back-to-top {
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  border: 2px solid #1d2d3a;
+  border: 2px solid #206926;
   line-height: 75px;
   color: #ff4a17;
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #14212b;
+  background-color: #206926;
 }
 
 @media (max-width: 767px) {

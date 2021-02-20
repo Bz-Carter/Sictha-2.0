@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header2',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header2.component.css']
 })
 export class Header2Component implements OnInit {
+
+  @Input() phone = '';
+  @Input() email = '';
+  @Input() adress = '';
 
   constructor() { }
 

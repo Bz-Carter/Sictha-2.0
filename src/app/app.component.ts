@@ -19,6 +19,13 @@ export class AppComponent implements OnInit {
   location: any;
   routerSubscription: any;
 
+  settings = { 
+    phone: '+225 20 21 82 18',
+    email: 'info@sictha.ci',
+    adress: 'Immeuble KM, Abidjan plateau 4e Etage BP 01 BP 7661 Abidjan 01.'
+   }
+  
+
   constructor(private router: Router) {
   }
 

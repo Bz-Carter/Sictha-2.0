@@ -1,11 +1,11 @@
 <!--====== Breadcrumb part Start ======-->
-    <section class="breadcrumb-section bg-img-c" style="background-image: url(assets/img/breadcrumb.jpg);">
+    <section class="breadcrumb-section bg-img-c" style="background-image: url({{contactUs.breadcrumb}});">
         <div class="container">
             <div class="breadcrumb-text">
-                <h1 class="page-title">Contact Us</h1>
+                <h1 class="page-title">{{contactUs.title}}</h1>
                 <ul>
                     <li><a routerLink='/'>Home</a></li>
-                    <li>Contact Us</li>
+                    <li>{{contactUs.title}}</li>
                 </ul>
             </div>
         </div>
@@ -24,26 +24,25 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="illustration-img text-center">
-                            <img src="assets/img/illustration/man-with-earth-02.png" alt="Image">
+                            <img src="{{contactUs.image}}" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-10 order-1 order-lg-2">
                         <div class="contact-info-content">
                             <div class="section-title left-border mb-40">
                                 <span class="title-tag">Get In Touch</span>
-                                <h2 class="title">Need Any Help For Business & Consulting</h2>
+                                <h2 class="title">{{contactUs.subTitle}}</h2>
                             </div>
                             <p>
-                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was
+                                {{contactUs.info}}
                             </p>
 
                             <ul>
                                 <li class="phone">
-                                    <a href="tel:+0123456789"><i class="far fa-phone"></i>+012 (345) 6789</a>
+                                    <a href="tel:{{contactUs.phone}}"><i class="far fa-phone"></i>{{contactUs.phone}}</a>
                                 </li>
-                                <li><i class="far fa-envelope-open"></i><a routerLink='/contact-us'>support@gmail.com</a></li>
-                                <li><i class="far fa-map-marker-alt"></i>Broklyn Street USA</li>
+                                <li><i class="far fa-envelope-open"></i><a routerLink='/contact-us'>{{contactUs.email}}</a></li>
+                                <li><i class="far fa-map-marker-alt"></i>{{contactUs.adress}}</li>
                             </ul>
                         </div>
                     </div>

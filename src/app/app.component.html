@@ -1,6 +1,14 @@
-<app-header2></app-header2>
+<app-header2
+  [phone]="settings.phone"
+  [email]="settings.email"
+  [adress]="settings.adress"
+></app-header2>
 
 <app-preloader></app-preloader>
 <router-outlet></router-outlet>
 
-<app-footer1></app-footer1>
+<app-footer1
+  [phone]="settings.phone"
+  [email]="settings.email"
+  [adress]="settings.adress"
+></app-footer1>
