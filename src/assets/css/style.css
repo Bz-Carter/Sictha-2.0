@@ -1321,7 +1321,7 @@ header.header-two .header-nav .nav-container .menu-items ul li a, header.header-
 }
 
 header.header-two .header-nav .nav-container .menu-items ul li .submenu li a:hover {
-  background-color: #14212b;
+  background-color: rgb(68, 50, 19);
 }
 
 header.header-two .header-topbar .contact-info li,
